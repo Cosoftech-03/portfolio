@@ -1,0 +1,134 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family:'poppins' , sans-serif;
+}
+body {
+  color: #ededed;
+}
+h1{
+  color:black;
+}
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px 10%;
+  background: transparent;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100;
+}
+.logo {
+  position: relative;
+  font-size: 30px;
+  padding: 48px;
+  color: rgb(73, 32, 179);
+  text-decoration: none;
+  font-weight: 600;
+  cursor: default;
+  opacity: 0;
+  animation: slideRight 1s ease forwards;
+}
+
+.navbar a {
+  display: inline-block;
+  font-size: 25px;
+  color: #ededed;
+  text-decoration: none;
+  font-weight: 500;
+  margin-left: 35px;
+  transition: 0s;
+  opacity: 0.5;
+  animation: slideTop 0.5s ease forwards;
+}
+.navbar a:hover {
+  color: black;
+  opacity: 0.8;
+  
+}
+.Home {
+  position: relative;
+  width: 100%;
+  justify-content: space-between;
+  height: 100vh;
+  background: url("My\ Photo.png") no-repeat;
+  /* background: #061f30; */
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  padding: 70px 10% 0;
+  margin-left: 35px;
+}
+.home-content {
+  max-width: 600px;
+}
+.home-content h3 {
+  font-size: 32px;
+  font-weight: 700;
+}
+.home-content h3 span {
+  color: #0ef;
+}
+.home-content h3:nth-of-type(2) {
+  margin-bottom: 30px;
+}
+.home-content h1 {
+  font-size: 56px;
+  font-weight: 700;
+  margin: -3 0;
+}
+.home-content p {
+  font-size: 20px;
+}
+.home-s a {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+  width: 40px;
+  background: transparent;
+  border: 2px solid rgb(95, 105, 193);
+  border-radius: 25%;
+  font-size: 20px;
+  color: white;
+  text-decoration: none;
+  margin: 30px 15px 30px 0;
+}
+.home-s a:hover {
+  background: #ededed;
+  color: red;
+  box-shadow: 0 0 20px rgb(69, 197, 165);
+}
+.btn-box {
+  display: inline-block;
+  padding: 12px 28px;
+  background: rgb(98, 208, 223);
+  border-radius: 40px;
+  font-size: 16px;
+  color: #050a0d;
+  letter-spacing: 1px;
+  text-decoration: none;
+  font-weight: 600;
+}
+.btn-box:hover {
+  box-shadow: 0 0 4px white,
+   0 0 25px white,
+    0 0 50px white,
+    0 0 100px white,
+    0 0 200px white;
+}
+@keyframes slideRight {
+  0% {
+    transform: translatex(-100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0px);
+    opacity: 1;
+  }
+}
